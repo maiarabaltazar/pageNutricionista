@@ -43,6 +43,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 48px;
+  mix-blend-mode: multiply;
 }
 
 .brand {
@@ -133,6 +134,7 @@ a {
   overflow: hidden;
   width: 100%;
   max-width: 520px;
+  mix-blend-mode: multiply;
 }
 
 .photo-card.secondary {
