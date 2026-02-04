@@ -135,6 +135,18 @@ a {
   display: block;
 }
 
+.hero-photo-image {
+  object-position: center;
+}
+
+.about-photo-image {
+  object-position: center;
+}
+
+.health-photo-image {
+  object-position: center;
+}
+
 .section {
   padding: 72px 8vw;
 }
