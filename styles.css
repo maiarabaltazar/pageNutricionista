@@ -169,9 +169,6 @@ a {
   padding: 12px 20px;
 }
 
-.health-photo {
-  aspect-ratio: 16 / 9;
-}
 
 .health-photo-image {
   object-fit: contain;
