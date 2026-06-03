@@ -154,6 +154,7 @@ a {
   max-width: 520px;
 }
 
+
 .photo-card img {
   width: 100%;
   height: auto;
@@ -172,14 +173,19 @@ a {
   padding: 24px;
 }
 
-.about-photo {
-  aspect-ratio: 4 / 5;
+.foto-maiana-img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  border-radius: 32px;
+  box-shadow: var(--shadow);
 }
 
+
 .about-photo-image {
-  object-fit: contain;
+  /*object-fit: contain;*/
   object-position: center;
-  /*padding: 12px 20px;*/
+  padding: 0;
 }
 
 .health-photo-image {
