@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 :root {
   --bg: #9babbb;
   --primary: #657690;
@@ -38,7 +43,7 @@ a {
 }
 
 .hero {
-  padding: 48px 8vw 64px;
+  padding: 120px 8vw 64px;
   background: linear-gradient(120deg, #ffffff 0%, #9babbb 70%, #9babbb 100%);
 }
 
@@ -46,8 +51,33 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
-  mix-blend-mode: multiply;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 8vw;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 10px rgba(101, 118, 144, 0.1);
+  z-index: 1000;
+}
+
+/* Estilos da nova lista de links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--primary);
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #000;
 }
 
 .brand {
@@ -154,7 +184,6 @@ a {
   max-width: 520px;
 }
 
-
 .photo-card img {
   width: 100%;
   height: auto;
@@ -180,7 +209,6 @@ a {
   border-radius: 32px;
   box-shadow: var(--shadow);
 }
-
 
 .about-photo-image {
   /*object-fit: contain;*/
@@ -303,10 +331,17 @@ a {
   .nav {
     flex-direction: column;
     gap: 16px;
+    padding: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
 
   .hero {
-    padding-top: 32px;
+    padding-top: 160px;
   }
 
   .hero-photo {
